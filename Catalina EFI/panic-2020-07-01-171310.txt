@@ -1,0 +1,44 @@
+panic(cpu 0 caller 0xffffff7f93c5b231): nvme: "Fatal error occurred. CSTS=0x1 US[1]=0x0 US[0]=0xe8 VID=0x144d DID=0xa808
+. FW Revision=1B2QEXM7\n"com.apple./AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/IONVMeFamily/IONVMeFamily-470.100.17/IONVMeController.cpp:5320
+Backtrace (CPU 0), Frame : Return Address
+0xffffff81fc3fb9e0 : 0xffffff801131f5cd 
+0xffffff81fc3fba30 : 0xffffff8011458b05 
+0xffffff81fc3fba70 : 0xffffff801144a68e 
+0xffffff81fc3fbac0 : 0xffffff80112c5a40 
+0xffffff81fc3fbae0 : 0xffffff801131ec97 
+0xffffff81fc3fbbe0 : 0xffffff801131f087 
+0xffffff81fc3fbc30 : 0xffffff8011ac27cc 
+0xffffff81fc3fbca0 : 0xffffff7f93c5b231 
+0xffffff81fc3fbcc0 : 0xffffff7f93c46362 
+0xffffff81fc3fbe20 : 0xffffff8011a333e9 
+0xffffff81fc3fbe90 : 0xffffff8011a33309 
+0xffffff81fc3fbec0 : 0xffffff8011361565 
+0xffffff81fc3fbf40 : 0xffffff8011361091 
+0xffffff81fc3fbfa0 : 0xffffff80112c513e 
+      Kernel Extensions in backtrace:
+         com.apple.iokit.IONVMeFamily(2.1)[1898DCFE-5C18-3D87-B9E7-DFC0D22FD7EE]com.apple.0xffffff7f93c38000-com.apple.driver.0xffffff7f93c7afff
+            dependency: com.apple.driver.AppleMobileFileIntegrity(1.0.5)[E35D090D-DB9E-3DD0-9723-651FA730AA13]com.apple.0xffffff7f9242e000
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[BE052F4D-9B80-3FCD-B36D-BACB7DEE0DF2]com.apple.0xffffff7f91d12000
+            dependency: com.apple.driver.AppleEFINVRAM(2.1)[4E64E519-CD9C-3D03-8E62-1074E9AD54A7]com.apple.0xffffff7f93bd6000
+            dependency: com.apple.iokit.IOStorageFamily(2.1)[E13E9C61-F1F5-3A81-B1EF-65669C3CBDBF]com.apple.0xffffff7f92080000
+            dependency: com.apple.iokit.IOReportFamily(47)[1FB49168-0280-3F04-A99A-F830C915E994]com.apple.0xffffff7f91c49000
+
+BSD process name corresponding to current thread: kernel_task
+Boot args: dart=0 darkwake=8 shikigva=80 -rootdmg-ramdisk auth-root-dmg=file:///macOS%20Install%20Data/BaseSystem.dmg
+
+Mac OS version:
+19F101
+
+Kernel version:
+Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64
+Kernel UUID: 54F1A78D-6F41-32BD-BFED-4381F9F6E2EF
+Kernel slide:     0x0000000011000000
+Kernel text base: 0xffffff8011200000
+__HIB  text base: 0xffffff8011100000
+System model name: iMac19,1 (Mac-AA95B1DDAB278B95)
+System shutdown begun: NO
+Panic diags file unavailable, panic occurred prior to initialization
+
+System uptime in nanoseconds: 127162473236
+last loaded kext at 41315407270: com.apple.kext.AMDFramebuffer	3.0.9 (addr 0xffffff7f95799000, size 245760)
+loaded kexts:
